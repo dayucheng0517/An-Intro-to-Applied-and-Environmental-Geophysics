@@ -67,7 +67,7 @@ Archie's Law : 將porewater的ρ、孔隙率(φ)、裂隙中水的體積(s)納�
 
 ![image](https://user-images.githubusercontent.com/105845318/170485734-3c6b5ea5-6f33-44c2-995a-f7c9e4dabb8c.png)
 
-
+<https://gpg.geosci.xyz/content/DC_resistivity/DC_basic_principles_current_voltage_halfspace.html>
 
 
 
