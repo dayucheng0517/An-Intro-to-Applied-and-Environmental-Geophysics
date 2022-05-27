@@ -39,7 +39,22 @@ Two media in one cube, then the cube is anisotropy
 
 岩石越老電阻率越高，因為經過再結晶和壓密作用
 
-Archie's Law : 將porewater的ρ、孔隙率(φ)、裂隙中水的體積(s)納入計算電阻率時的考量
+>Archie’s law relates the effective conductivity to the fluid conductivity σL, fluid saturation sL, and porosity εp:
+>
+>![image](https://user-images.githubusercontent.com/105845318/170693293-36121064-5c52-45f5-a6ea-846d5e620a54.png)
+>
+>here, m is the cementation exponent, it describes the connectivity of the pores. m normally between 1.3 and 2.5 for most sedimentary rocks and is close to 2 for sandstones. The lower limit m = 1 represents a volume average of the conductivities of a fully saturated, insulating (zero conductivity) porous matrix, and a conducting fluid. The saturation coefficient n is normally close to 2. The ratio F = σL/σ is called the formation factor.
+Archie’s law does not take care of the relative permittivity of either fluids or solids, so the effective relative permittivity of the porous medium is normally consider as εr = 1.
+
+>For rocks composed of non-conducting matrix minerals and saturated with water
+>
+>![image](https://user-images.githubusercontent.com/105845318/170694793-b2e9adc8-0507-4283-9f54-e521a6a2f9be.png)
+>
+>where φ is the porosity (ratio of void volume/total volume), and A and m are constants that depend on the geometry of the pores. For many rocks, A = about 1 and m = about 2. See Keller, G.V. (1982) for a broader discussion. Papers discussing various A and m values for specific rocks (shaly sands, clean sandstones, etc.)
+>
+>Archie's Law is not valid for rocks containing a significant percentage of clay.  Clay provides for conductive matrix, rendering a fundamental assumption invalid.  Graphite, native metals, and minerals with metallic lusters are also electrical conductors, but these are far scarcer than clays.
+
+
 
 > Massive form(high ρ) >> Individual crystals(low ρ) 
 > 
@@ -69,7 +84,19 @@ Archie's Law : 將porewater的ρ、孔隙率(φ)、裂隙中水的體積(s)納�
 
 <https://gpg.geosci.xyz/content/DC_resistivity/DC_basic_principles_current_voltage_halfspace.html>
 
+## 7.3 電極配置與幾何因素
 
+### 7.3.1 General case
+
+>Geometric factor (K) : ρa = Kg*R where R = δV/I
+>
+>The generalized formula for calculating Kg for a four-electrode configuration is: Kg = 2π(1/C1P1 – 1/C1P2 – 1/C2P1 + 1/C2P2)1 where C1 and C2, and P1 and P2 are the current and potential electrode positions respectively.
+
+![image](https://user-images.githubusercontent.com/105845318/170714862-4b6e64de-f22e-46d7-be54-d18a4cba6366.png)
+ 
+When AB/z = 2, there will be 50% current flow through the depth z
+
+So very deep = telemetering
 
 
 
