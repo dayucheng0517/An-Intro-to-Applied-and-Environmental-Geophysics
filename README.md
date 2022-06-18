@@ -90,7 +90,7 @@ Archie’s law does not take care of the relative permittivity of either fluids 
 
 >Geometric factor (K) : ρa = Kg*R where R = δV/I
 >
->K : 電極的幾何排列
+>K = 2π [ 1/AM - 1/MB - 1/AN + 1/NB ] (代表電極的幾何排列)
 >
 >The generalized formula for calculating Kg for a four-electrode configuration is: Kg = 2π(1/C1P1 – 1/C1P2 – 1/C2P1 + 1/C2P2)1 where C1 and C2, and P1 and P2 are the current and potential electrode positions respectively.
 
@@ -100,20 +100,58 @@ When AB/z = 2, there will be 50% current flow through the depth z
 
 So very deep = telemetering
 
+利用 Vp = Va + Vb 的性質，可以推導出電阻率的公式 
+
 ### 7.3.2 電極配置
 
 > Most commonly used electrode configurations
 >  1. Wenner arrays : main response is largely flat/ has a high vertical resolution
 >     1. Standard Wenner
->     2. Offset Wenner
+>     2. Offset Wenner : easy to use/ (+ areas)+(- areas)/2 can reducng the error due to a lateral inhomogenies.
+>     3. Lee partitioning array (Not an common one) : to reduce near-surface lateral inhomogeneities 
 >  2. Schlumberger arrays : main response is largely flat, but 上凹/ has a high vertical resolution
 >     1. Standard Schlumberger
 >  3. Dipoledipole arrays : has a poor vertical resolution(lobate)/ particularly sensitive to deep area/ unsuitable for depth sounding(電極間距interelectrode和測線長度有很大的關係)
 >     1. Normal(axial or polar)
 >     2. Equatorial
->     3. Square(special form of equatorial)
+>     3. Square(special form of equatorial) : particularly 
 
-關於電極配置的選擇，除了空間、勞力因素之外。對於不均勻剖面的敏感度、傾角也是非常重要的因素。
+關於電極配置的選擇，除了空間、勞力因素之外。對於測向不均勻的敏感度、傾角介面也是非常重要的因素。
+
 Signal contribution sections : 顯示地底下的電位等值線(Contour line)
 
+我們將電極配置中的距離參數(a)，帶入K公式以後，就可以得到，不同電極配置，所對應的視電阻率公式。
+
+先跳到 7.5
+麒書要教我資料處理了
+
+## 7.5 解釋方法
+
+Vertical sounding field curves 可以用圖形、半數值半圖形、電腦模型(數值)來解釋
+
+電腦模型最為嚴謹，但可能會過度解釋
+
+Field curve 會有不明顯的反曲點或頂點，解釋者需要判斷他有多重要
+
+一個雜訊多的 field curve 要先得到一個平滑的圖形，在用數值方法來解釋
+
+### 7.5.1 定性研究
+
+First to identify the curve shapes
+ 1. 有六種大致的模型
+ 2. X軸可以分為三-四個"層"來看
+ 3. log-log 曲線的傾斜若超過45° = error in data
+ 4. ρ1ρ2ρ3的相對大小是解釋的起頭
+ 5. 如果其中一層非常薄，那這層可能不存在
+ 6. 轉折點不代表最大最小值
+
+### 7.5.2 Master Curve
+
+前提假設 : 地表水平延伸、越深越厚
+條件限制 : Master curve 最多只能用到四層
+作圖過程 : 有點複雜，自己看課本
+
+### 7.5.3 Curve matching by computer
+
+The method called 'liner digital filter'
 
