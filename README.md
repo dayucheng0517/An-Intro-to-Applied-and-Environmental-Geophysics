@@ -90,6 +90,8 @@ Archie’s law does not take care of the relative permittivity of either fluids 
 
 >Geometric factor (K) : ρa = Kg*R where R = δV/I
 >
+>K : 電極的幾何排列
+>
 >The generalized formula for calculating Kg for a four-electrode configuration is: Kg = 2π(1/C1P1 – 1/C1P2 – 1/C2P1 + 1/C2P2)1 where C1 and C2, and P1 and P2 are the current and potential electrode positions respectively.
 
 ![image](https://user-images.githubusercontent.com/105845318/170714862-4b6e64de-f22e-46d7-be54-d18a4cba6366.png)
@@ -98,5 +100,20 @@ When AB/z = 2, there will be 50% current flow through the depth z
 
 So very deep = telemetering
 
+### 7.3.2 電極配置
+
+> Most commonly used electrode configurations
+>  1. Wenner arrays : main response is largely flat/ has a high vertical resolution
+>     1. Standard Wenner
+>     2. Offset Wenner
+>  2. Schlumberger arrays : main response is largely flat, but 上凹/ has a high vertical resolution
+>     1. Standard Schlumberger
+>  3. Dipoledipole arrays : has a poor vertical resolution(lobate)/ particularly sensitive to deep area/ unsuitable for depth sounding(電極間距interelectrode和測線長度有很大的關係)
+>     1. Normal(axial or polar)
+>     2. Equatorial
+>     3. Square(special form of equatorial)
+
+關於電極配置的選擇，除了空間、勞力因素之外。對於不均勻剖面的敏感度、傾角也是非常重要的因素。
+Signal contribution sections : 顯示地底下的電位等值線(Contour line)
 
 
